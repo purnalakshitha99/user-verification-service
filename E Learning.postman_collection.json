@@ -1,0 +1,588 @@
+{
+	"info": {
+		"_postman_id": "b4e74786-5d7f-423a-b1b4-1eaae6279e01",
+		"name": "E Learning",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37340823"
+	},
+	"item": [
+		{
+			"name": "face_detection",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "Isuru Alagiyawanna",
+							"type": "text"
+						},
+						{
+							"key": "image_file",
+							"type": "file",
+							"src": "/C:/Freelance 2024/Group/E Learning/data/facedb/Isuru Alagiyawanna/IMG-20240804-WA0001.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/face_detection",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"face_detection"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "face_detection",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "Isuru Alagiyawanna",
+									"type": "text"
+								},
+								{
+									"key": "image_file",
+									"type": "file",
+									"src": "/C:/Freelance 2024/Group/E Learning/data/test_images/qqq.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/face_detection",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"face_detection"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.10.13"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 11 Aug 2024 13:29:53 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "39"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Face detection completed\"\n}"
+				}
+			]
+		},
+		{
+			"name": "face_monitoring",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "Isuru Alagiyawanna",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/face_monitoring",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"face_monitoring"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "face_monitoring",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "Isuru Alagiyawanna",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/face_monitoring",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"face_monitoring"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.10.13"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 11 Aug 2024 13:31:59 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "65"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"detected_percentage\": \"70.0 %\",\n    \"forward_percentage\": \"35.0 %\"\n}"
+				}
+			]
+		},
+		{
+			"name": "flow_analyzer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "audio_file",
+							"type": "file",
+							"src": "/C:/Users/isuru/Dropbox/Freelance 2024/Group/COMPLETED/E Learning/store/audios/British Accent Online Course.mp3"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/flow_analyzer",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"flow_analyzer"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "flow_analyzer",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "audio_file",
+									"type": "file",
+									"src": "/C:/Freelance 2024/Group/E Learning/store/audios/new_video.mp3"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/flow_analyzer",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"flow_analyzer"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.10.13"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 11 Aug 2024 13:34:53 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "405"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"filler_words_and_pause_fillers\": {\n        \"filler_words_percentage\": \"9.63 %\",\n        \"pause_filler_percentage\": \"6 %\",\n        \"repetitive_words\": [\n            {\n                \"repetitive_word\": \"really\",\n                \"word_count\": 1\n            },\n            {\n                \"repetitive_word\": \"seriously\",\n                \"word_count\": 1\n            }\n        ],\n        \"filler_words\": [\n            {\n                \"filler_word\": \"like\",\n                \"word_count\": 4\n            },\n            {\n                \"filler_word\": \"you know\",\n                \"word_count\": 3\n            },\n            {\n                \"filler_word\": \"well\",\n                \"word_count\": 1\n            }\n        ]\n    },\n    \"grammar_errors\": \"17.32 %\"\n}"
+				},
+				{
+					"name": "flow_analyzer",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "audio_file",
+									"type": "file",
+									"src": "/C:/Users/isuru/Dropbox/Freelance 2024/Group/COMPLETED/E Learning/store/audios/British Accent Online Course.mp3"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/flow_analyzer",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"flow_analyzer"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.3 Python/3.10.14"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 01 Dec 2024 17:24:23 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "289"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"filler_words_and_pause_fillers\": {\n        \"filler_words_percentage\": \"17.32 %\",\n        \"pause_filler_percentage\": \"12 %\",\n        \"repetitive_words\": [],\n        \"filler_words\": [\n            {\n                \"filler_word\": \"so\",\n                \"word_count\": 4\n            },\n            {\n                \"filler_word\": \"like\",\n                \"word_count\": 1\n            }\n        ]\n    },\n    \"grammar_errors\": \"4.63 %\",\n    \"fluency_score\": \"88.68 %\"\n}"
+				}
+			]
+		},
+		{
+			"name": "answer_evaluation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "question",
+							"value": "What is the role of a prototype program in problem",
+							"type": "text"
+						},
+						{
+							"key": "correct_answer",
+							"value": "to simulate the behaviour of portions of the desired software product",
+							"type": "text"
+						},
+						{
+							"key": "user_answer",
+							"value": "program that simulates the behavior of portions of the desired software product",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/answer_evaluation",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"answer_evaluation"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "answer evaluation",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "question",
+									"value": "What is the role of a prototype program in problem",
+									"type": "text"
+								},
+								{
+									"key": "correct_answer",
+									"value": "to simulate the behaviour of portions of the desired software product",
+									"type": "text"
+								},
+								{
+									"key": "user_answer",
+									"value": "program that simulates the behavior of portions of the desired software product",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/answer_evaluation",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"answer_evaluation"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.10.13"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 11 Aug 2024 13:37:54 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "18"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Score\": \"100 %\"\n}"
+				}
+			]
+		},
+		{
+			"name": "document_rag",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cv",
+							"type": "file",
+							"src": "/C:/Users/isuru/Downloads/Educational Reforms in Sri Lanka.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/document_rag",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"document_rag"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "document_rag",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cv",
+									"type": "file",
+									"src": "/C:/Freelance 2024/Group/E Learning/data/jobs/CVs/CV - Updated.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/document_rag",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"document_rag"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.10.13"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Aug 2024 14:01:39 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "168"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"JDs\": [\n        \"data/jobs/PERSONAs/JD1.json\",\n        \"data/jobs/PERSONAs/JD16.json\",\n        \"data/jobs/PERSONAs/JD39.json\",\n        \"data/jobs/PERSONAs/JD33.json\",\n        \"data/jobs/PERSONAs/JD35.json\"\n    ]\n}"
+				}
+			]
+		}
+	]
+}
