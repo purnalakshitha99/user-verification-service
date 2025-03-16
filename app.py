@@ -122,31 +122,31 @@ def api_face_detection():
 #         )
 
 # @app.route('/api/document_rag', methods=['POST'])
-def api_document_rag():
-    try:
-        cv = request.files['cv']
-        cv_path = os.path.join(app.config['UPLOAD_CV_FOLDER'], secure_filename(cv.filename))
-        cv.save(cv_path)
+# def api_document_rag():
+#     try:
+#         cv = request.files['cv']
+#         cv_path = os.path.join(app.config['UPLOAD_CV_FOLDER'], secure_filename(cv.filename))
+#         cv.save(cv_path)
 
-        response = retrieve_documents(cv_path)
-        response = json.loads(response)
-        return Response(
-            response=json.dumps({
-                "JDs": response
-            }),
-            status=200,
-            mimetype="application/json"
-        )
+#         response = retrieve_documents(cv_path)
+#         response = json.loads(response)
+#         return Response(
+#             response=json.dumps({
+#                 "JDs": response
+#             }),
+#             status=200,
+#             mimetype="application/json"
+#         )
 
-    except Exception as e:
-        return Response(
-            response=json.dumps({
-                "message": "Document RAG failed",
-                "error": str(e)
-            }),
-            status=400,
-            mimetype="application/json"
-        )
+#     except Exception as e:
+#         return Response(
+#             response=json.dumps({
+#                 "message": "Document RAG failed",
+#                 "error": str(e)
+#             }),
+#             status=400,
+#             mimetype="application/json"
+#         )
 
 if __name__ == '__main__':
     app.run(
